@@ -1,0 +1,30 @@
+<html>
+<head>
+   <title> JavaScript - for...in loop </title>
+</head>
+<body>
+   <p id = "output"> </p>
+   <p id = "info"> </p>
+
+   <script>
+      let output = document.getElementById("output");
+      let car = {
+         brand: "OD",
+         model: "Q7",
+         color: "Black",
+      }
+      for (key in car) {
+         output.innerHTML += key + " -> " + car[key] + "<br>";
+      }
+
+      let info = document.getElementById("info");
+      info.innerHTML += "<h2>This is to retrieve string </h2>"
+      let str = "Hello";
+      for (key in str) {
+         info.innerHTML += key + " -> " + str[key] + "<br>";
+      }
+      </script>
+
+
+</body>
+</html>
